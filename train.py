@@ -10,12 +10,13 @@ from os.path import basename
 from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array, load_img
 
 #--------------------------------------------------------------------
-xmlFolder = "/home/digits/datasets/palm_dataset/labels"
-imgFolder = "/home/digits/datasets/palm_dataset/images"
-saveYoloPath = "/home/digits/datasets/palm_dataset/yolo"
+xmlFolder = "/home/ubuntu/datasets/palm_dataset/labels"
+imgFolder = "/home/ubuntu/datasets/palm_dataset/images"
+saveYoloPath = "/home/ubuntu/datasets/palm_dataset/yolo"
 classList = { "palm":0 }
 
-modelYOLO = "yolov3-tiny"  #yolov3 or yolov3-tiny
+#modelYOLO = "yolov3-tiny"  #yolov3 or yolov3-tiny
+modelYOLO = "yolov3"  #yolov3 or yolov3-tiny
 testRatio = 0.2
 cfgFolder = "cfg.palm"
 cfg_obj_names = "obj.names"
@@ -24,7 +25,7 @@ cfg_obj_data = "obj.data"
 negative_images = True  #treate images with no xml files as negative images
 numBatch = 24
 numSubdivision = 3
-darknetEcec = "/home/digits/works/darknet/darknet"
+darknetEcec = "/home/ubuntu/darknet/darknet"
 
 #---------------------------------------------------------------------
 
